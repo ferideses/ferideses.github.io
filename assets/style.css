@@ -554,8 +554,12 @@ body::before {
 .icon-link:hover, .icon-link:focus-visible {
   border-color: var(--line); transform: translateY(-4px); background: var(--bg-2);
 }
-.icon-svg { width: 64px; height: 64px; display: block; opacity: .95; }
+.icon-svg {
+  width: 64px; height: 64px; display: flex; align-items: center; justify-content: center;
+  color: var(--gold-soft); transition: color var(--dur), transform var(--dur) var(--ease);
+}
 .icon-svg svg { width: 100%; height: 100%; }
+.icon-link:hover .icon-svg { color: var(--gold); transform: translateY(-3px); }
 .icon-link .icon-label {
   color: var(--text-1); font-size: .92rem; font-weight: 600; text-align: center;
 }
