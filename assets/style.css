@@ -152,6 +152,11 @@ body::before {
   color: var(--accent-soft); font-size: .82rem; letter-spacing: .35em;
   text-transform: uppercase; display: block; margin-bottom: 10px; font-family: var(--font-body);
 }
+.section-head .section-sub {
+  color: var(--text-1); max-width: 46rem; margin: 14px auto 0; font-size: 1.06rem;
+}
+.hero-title-link { display: inline-block; }
+.hero-title-link:hover .hero-title { color: var(--gold-soft); }
 
 /* ---------- header ---------- */
 .site-header {
