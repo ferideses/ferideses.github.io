@@ -708,6 +708,23 @@ body::before {
 }
 .lb-close:hover { border-color: var(--gold); color: var(--gold-soft); }
 
+/* ---------- street libraries hero ---------- */
+.libraries-hero {
+  min-height: clamp(320px, 46vh, 480px);
+  background:
+    radial-gradient(70vw 60vh at 50% 115%, rgba(201, 162, 75, .16), transparent 65%),
+    radial-gradient(40vw 30vh at 12% 0%, rgba(201, 162, 75, .07), transparent 70%),
+    linear-gradient(180deg, #07080c, var(--bg-1));
+  border-bottom: 1px solid var(--line);
+}
+.libraries-hero .hero-content { padding: 60px 22px 46px; }
+.libraries-hero-icon {
+  width: 92px; height: 92px; margin: 0 auto 18px; color: var(--gold-soft);
+  filter: drop-shadow(0 0 22px rgba(201, 162, 75, .35));
+}
+.libraries-hero .hero-title { text-shadow: none; }
+.libraries-hero .rule-ornament { margin-top: 26px; }
+
 /* ---------- libraries map ---------- */
 .libraries-map {
   height: clamp(480px, 68vh, 760px); overflow: hidden; background: var(--bg-2);
